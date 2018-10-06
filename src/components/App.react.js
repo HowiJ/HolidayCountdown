@@ -2,8 +2,15 @@
  * @format
  */
 
-import React from 'react';
+import "../styles/App.css";
 
-const App = (props) => <div>App Page</div>
+import React from "react";
+import Countdown from "./Countdown.react";
+
+const App = props => (
+  <div className="App">
+    <Countdown day={5} />
+  </div>
+);
 
 export default App;
