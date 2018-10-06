@@ -26,6 +26,7 @@ const Countdown = ({
   const momentTarget = moment(`${year}-${month}-${day}`);
   const momentNow = moment();
   const periodTillTarget = momentTarget.diff(momentNow, period);
+
   return (
     <span>
       {periodTillTarget} {plural(period, periodTillTarget)}
